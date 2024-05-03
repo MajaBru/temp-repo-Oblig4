@@ -66,14 +66,12 @@ const loginUser = async (req, res) => {
     // @ts-ignore
     const token = jwt.sign({ _id: user._id }, process.env.TOKEN_SECRET);
 
-    res.cookie('auth_token', token, {httpOnly: true});
-    res.send('Login successful');
+    res.cookie('jwt', token, {httpOnly: true}).json({message: "Logged in successfully"});
 }
 
-// User logout
-const logoutUser = async (req, res) => {
-    res.clearCookie('auth_token');
-    res.send('Logout successful');
+// logout function
+const logoutUser = async (req, res) =>{
+    res.clearCookie('jwt').json({message:'Logged out succesfully'})
 }
 
 // Create new user (for admins in dashboard)

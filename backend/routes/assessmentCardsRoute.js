@@ -4,7 +4,7 @@ const AssessmentCard = require('../models/assessmentCard_schema.js');
 const { getAllAssessCards, getOneAssessCard,
     createNewAssessCard, updateOneAssessCard,
     deleteOneAssessCard } = require('../controller/assessment_controller.js');
-const { auth, authRole, attachTokenToHeader } = require('./verifyToken.js');
+const { auth, authRole } = require('./verifyToken.js');
 
 const upload = require('../upload.js');
 
@@ -86,16 +86,16 @@ router.put("/upload/category/:category", upload.single("file"), async (req, res)
 router.get("/", getAllAssessCards);
 
 // get a specific card by id
-router.get("/:id", attachTokenToHeader, auth, authRole('Admin'), getOneAssessCard);
+router.get("/:id", auth, authRole('Admin'), getOneAssessCard);
 
 // create a new card
-router.post("/", attachTokenToHeader, auth, authRole('Admin'), createNewAssessCard);
+router.post("/", auth, authRole('Admin'), createNewAssessCard);
 
 //update a specific card with id
-router.put("/:id", attachTokenToHeader, auth, authRole('Admin'), updateOneAssessCard);
+router.put("/:id", auth, authRole('Admin'), updateOneAssessCard);
 
 // delete a specific card with id
-router.delete("/:id", attachTokenToHeader, auth, authRole('Admin'), deleteOneAssessCard);
+router.delete("/:id", auth, authRole('Admin'), deleteOneAssessCard);
 
 
 

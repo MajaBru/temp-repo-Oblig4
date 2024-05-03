@@ -2,7 +2,7 @@ const User = require('../models/user_schema');
 const jwt = require('jsonwebtoken');
 
 const auth = async (req, res, next) => {
-    const authtoken = req.headers['Authorization'];
+    const authtoken = req.cookies.jwt;
     if (!authtoken || !authtoken.startsWith('Bearer')) {
         return res.status(401).send('Access denied');
     }
@@ -27,6 +27,7 @@ function authRole(role) {
     }
 }
 
+/*
 const attachTokenToHeader = (req, res, next) => {
     const token = req.cookies.auth_token;
     if (token) {
@@ -34,5 +35,6 @@ const attachTokenToHeader = (req, res, next) => {
     }
     next();
   };
+*/
 
-module.exports = { auth, authRole, attachTokenToHeader };
+module.exports = { auth, authRole };
