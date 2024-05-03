@@ -1,0 +1,19 @@
+.Create-card-form input {
+    display: block ;
+} 
+
+.Create-card-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1em;
+}
+
+textarea {
+    display: block;
+    width: 300px;
+    padding: 10px;
+    height: 100px;
+    resize: none;
+}

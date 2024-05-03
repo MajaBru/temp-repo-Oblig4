@@ -1,0 +1,825 @@
+[
+    {
+        "card_id": 1,
+        "card_type": "Assessment",
+        "card_category": "Who is assessed",
+        "card_name": "Student",
+        "card_description": "A student is assessed individually",
+        "card_details": "The student will be assess either on an independent work or on their contribution in a group assignment. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 2,
+        "card_type": "Assessment",
+        "card_category": "Who is assessed",
+        "card_name": "Student pair",
+        "card_description": "Two students work together on an assignment or task. ",
+        "card_details": "Students can be grouped by own choice, by chance, or by teacher based on their skills and personal characteristics",
+        "card_icon": ""
+      },
+      {
+        "card_id": 3,
+        "card_type": "Assessment",
+        "card_category": "Who is assessed",
+        "card_name": "Student group",
+        "card_description": "Three or more students work together on an assignment or project.",
+        "card_details": "Students can be grouped by own choice, by chance, or by teacher based on their skills and personal characteristics",
+        "card_icon": ""
+      },
+      {
+        "card_id": 4,
+        "card_type": "Assessment",
+        "card_category": "Who is assessed",
+        "card_name": "Student group from different study programme/Inter_disciplinary student group",
+        "card_description": "Student group from different discipline.\r\nprogramme, put\r\ntogether in a group. ",
+        "card_details": "Three or more student from different disciplines, out together in a group.",
+        "card_icon": ""
+      },
+      {
+        "card_id": 5,
+        "card_type": "Assessment",
+        "card_category": "The assessor",
+        "card_name": "Teacher",
+        "card_description": "Assess the work of a student or student group",
+        "card_details": "Has good knowledge about the course curriculum and learning outcomes.",
+        "card_icon": ""
+      },
+      {
+        "card_id": 6,
+        "card_type": "Assessment",
+        "card_category": "The assessor",
+        "card_name": "Lecturer from different field",
+        "card_description": "Has a different professional background than the students and/or teacher. ",
+        "card_details": "Can assess parts of the artefact they have expertize in.",
+        "card_icon": ""
+      },
+      {
+        "card_id": 7,
+        "card_type": "Assessment",
+        "card_category": "The assessor",
+        "card_name": "Teaching assistant from different discipline",
+        "card_description": "Student with different professional or academic background than the students and/or the teacher.",
+        "card_details": "Reduces time and resources spent by teacher. Can use criteria made by the teacher. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 8,
+        "card_type": "Assessment",
+        "card_category": "The assessor",
+        "card_name": "Contractor/developer",
+        "card_description": "Whose field of expertice or project is relevant for the course",
+        "card_details": "Can assess the students\u2019 work with the work life appliance in mind. Can use criteria made by the teacher. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 9,
+        "card_type": "Assessment",
+        "card_category": "The assessor",
+        "card_name": "Business representative",
+        "card_description": "Whose field of expertice or project is relevant for the course.",
+        "card_details": "Can assess the students\u2019 work with the work life appliance in mind. Can use criteria made by the lteacher. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 10,
+        "card_type": "Assessment",
+        "card_category": "The assessor",
+        "card_name": "Representative from public sector",
+        "card_description": "Whose field of expertice or project is relevant for the course.",
+        "card_details": "Can assess the students\u2019 work with the work life appliance in mind. Can use criteria made by the teacher. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 11,
+        "card_type": "Assessment",
+        "card_category": "The assessor",
+        "card_name": "Student",
+        "card_description": "Assess another student or student group's work. ",
+        "card_details": "The student gets practice in how to evaluate other's work. Use clear Assessment criteria made by the teacher.",
+        "card_icon": ""
+      },
+      {
+        "card_id": 12,
+        "card_type": "Assessment",
+        "card_category": "The assessor",
+        "card_name": "Student group",
+        "card_description": "Assess their own work or another group's work.",
+        "card_details": "The students gets practice in how to evaluate other's work. Use clear Assessment criteria made by the teacher.",
+        "card_icon": ""
+      },
+      {
+        "card_id": 13,
+        "card_type": "Assessment",
+        "card_category": "The assessor",
+        "card_name": "Teaching assistant",
+        "card_description": "Student hired to assist in the course.",
+        "card_details": "Reduces time and resources spent by teacher. Can use criteria made by the teacher. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 14,
+        "card_type": "Assessment",
+        "card_category": "The assessor",
+        "card_name": "Customer/User",
+        "card_description": "A potential customer or user of the artefact. ",
+        "card_details": "Can assess to which degree students' work adresses costumer/user needs and desires.",
+        "card_icon": ""
+      },
+      {
+        "card_id": 15,
+        "card_type": "Assessment",
+        "card_category": "The assessor",
+        "card_name": "Teacher from the same discipline",
+        "card_description": "Has the same professional or academic background as the students and/or teacher.",
+        "card_details": "Involve a colleague. Can facilitate a team_teaching_process.",
+        "card_icon": ""
+      },
+      {
+        "card_id": 16,
+        "card_type": "Assessment",
+        "card_category": "The assessor",
+        "card_name": "Case owner",
+        "card_description": "Representative for a case \r\nassignment. Can be an \r\nentrepreneur, from an NGO, etc. ",
+        "card_details": "Can assess to which degree students\u2019 work create value for the case owner. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 17,
+        "card_type": "Assessment",
+        "card_category": "The assessor",
+        "card_name": "Self_Assessment",
+        "card_description": "The assessor is the same as who is assessed. ",
+        "card_details": "Reflects on their own work. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 18,
+        "card_type": "Assessment",
+        "card_category": "Assessment artefact",
+        "card_name": "Report",
+        "card_description": "Written account of something that the student has observed, heard, done, or investigated.",
+        "card_details": "Make assessment criteria about content and quality rather than word count. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 19,
+        "card_type": "Assessment",
+        "card_category": "Assessment artefact",
+        "card_name": "Presentation",
+        "card_description": "Conveys oral information from a speaker to an audience, often supported by slides, props, flipover or whiteboards.",
+        "card_details": "Typically meant to inform, persuade, inspire, motivate, or present a new idea/report/product.",
+        "card_icon": ""
+      },
+      {
+        "card_id": 20,
+        "card_type": "Assessment",
+        "card_category": "Assessment artefact",
+        "card_name": "Prototype",
+        "card_description": "A preliminary or first model of something, such as a product, machine or user interface",
+        "card_details": "Can range from low_fidelity paper prototypes to high_fidelity fully functional prototypes.",
+        "card_icon": ""
+      },
+      {
+        "card_id": 22,
+        "card_type": "Assessment",
+        "card_category": "Assessment artefact",
+        "card_name": "Blog post",
+        "card_description": "A piece of writing or other item of content published on a blog or web page",
+        "card_details": "Typically covers a specific topic or query, is educational, and contains media such as images, videos, infographics, and interactive charts.",
+        "card_icon": ""
+      },
+      {
+        "card_id": 21,
+        "card_type": "Assessment",
+        "card_category": "Assessment artefact",
+        "card_name": "Business plan",
+        "card_description": "Document that provides a description and overview of a company's future. ",
+        "card_details": "Consider using a real company or startup for increased authenticity.",
+        "card_icon": ""
+      },
+      {
+        "card_id": 23,
+        "card_type": "Assessment",
+        "card_category": "Assessment artefact",
+        "card_name": "Academic essay",
+        "card_description": "Structured form of writing to answer a question or task based on evidence. ",
+        "card_details": "It should have a thesis statement and arguments",
+        "card_icon": ""
+      },
+      {
+        "card_id": 24,
+        "card_type": "Assessment",
+        "card_category": "Assessment artefact",
+        "card_name": "Programming code",
+        "card_description": "Shows the internal structure and workings of a computer program",
+        "card_details": "Should be well documented for easy assessment ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 25,
+        "card_type": "Assessment",
+        "card_category": "Assessment artefact",
+        "card_name": "Sketchbook",
+        "card_description": "Document the ideation or design process of the student",
+        "card_details": "Recuire annotations to make assessment easier.",
+        "card_icon": ""
+      },
+      {
+        "card_id": 26,
+        "card_type": "Assessment",
+        "card_category": "Assessment artefact",
+        "card_name": "Physical model",
+        "card_description": "A threedimensional representation of a product, artwork, person, animal, etc. ",
+        "card_details": "Allow scale models to reduce the material needed. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 27,
+        "card_type": "Assessment",
+        "card_category": "Assessment artefact",
+        "card_name": "Attendance/participation",
+        "card_description": "Presence at mandatory teaching activities.",
+        "card_details": "The amount and/or quality of the students participation in learning activities. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 28,
+        "card_type": "Assessment",
+        "card_category": "Assessment artefact",
+        "card_name": "Video",
+        "card_description": "A recording or animation of moving visual images presented or published online.",
+        "card_details": "Make length contraints to simplify Assessment",
+        "card_icon": ""
+      },
+      {
+        "card_id": 29,
+        "card_type": "Assessment",
+        "card_category": "Assessment artefact",
+        "card_name": "Podcast",
+        "card_description": "Audio episodes that relates to a specific theme and can be published online. ",
+        "card_details": "Can take many formats, such as interviews conversational, educational, non_fiction storytelling, news, etc.",
+        "card_icon": ""
+      },
+      {
+        "card_id": 30,
+        "card_type": "Assessment",
+        "card_category": "Assessment artefact",
+        "card_name": "Brochure/booklet",
+        "card_description": "A folded paper or small, thin book giving information on a particular subject",
+        "card_details": "Adapt this artefact to many formats. This artefact is easy to read and visual. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 31,
+        "card_type": "Assessment",
+        "card_category": "Assessment artefact",
+        "card_name": "Investor pitch",
+        "card_description": "Presentation summarizing  a company, its business plan, and vision, often with the purpose of attracting investors or employees.",
+        "card_details": "Consider using both subjective and objective Assessment criterias.",
+        "card_icon": ""
+      },
+      {
+        "card_id": 32,
+        "card_type": "Assessment",
+        "card_category": "Assessment artefact",
+        "card_name": "Pop_up",
+        "card_description": " A temporary shop or business, operating only for a short amount of time. ",
+        "card_details": "5 days exhibition and sales of products and services the students have made/ are providing",
+        "card_icon": ""
+      },
+      {
+        "card_id": 33,
+        "card_type": "Assessment",
+        "card_category": "Assessment artefact",
+        "card_name": "App",
+        "card_description": "Software program designed for a spesific function running on a smart phone",
+        "card_details": "This artefact can be used to test on users and get feedback to itterate the software. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 34,
+        "card_type": "Assessment",
+        "card_category": "Assessment artefact",
+        "card_name": "Poster",
+        "card_description": "A large sheet in a public space with both textual and graphic elements to inform the viewer about a topic.",
+        "card_details": "Posters are designed to be both eye_catching and informative.",
+        "card_icon": ""
+      },
+      {
+        "card_id": 35,
+        "card_type": "Assessment",
+        "card_category": "Assessment artefact",
+        "card_name": "Multiple choice test",
+        "card_description": "Students should select only correct answers from  several choices offered as a list.",
+        "card_details": "Can be used\u00a0to test factual recall, levels of understanding, and ability to apply learning.",
+        "card_icon": ""
+      },
+      {
+        "card_id": 36,
+        "card_type": "Assessment",
+        "card_category": "Assessment artefact",
+        "card_name": "Oral exam",
+        "card_description": "An examination conducted by spoken communication. Based on questions or exercises evaluating skill or knowledge.",
+        "card_details": "Students can have time to prepare for a set of questions. Room for demonstrating both reflection and knowledge.",
+        "card_icon": ""
+      },
+      {
+        "card_id": 37,
+        "card_type": "Assessment",
+        "card_category": "Assessment artefact",
+        "card_name": "Written exam",
+        "card_description": "A written examination with time constraints.",
+        "card_details": "Can be done as a school exam or a home assignment. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 38,
+        "card_type": "Assessment",
+        "card_category": "Assessment artefact",
+        "card_name": "Empirical work",
+        "card_description": "Empirical data gathered in the course or through an assignment. ",
+        "card_details": "Should include both visual presentations and explanations. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 39,
+        "card_type": "Assessment",
+        "card_category": "Assessment artefact",
+        "card_name": "Exercises",
+        "card_description": "To be done outside of lectures and without the help of\r\nteachers. ",
+        "card_details": "Time saving as students has to do the exercises in their own time. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 40,
+        "card_type": "Assessment",
+        "card_category": "Assessment artefact",
+        "card_name": "Digital prototype",
+        "card_description": "Clickable prototype that demonstrates a subset of functions of a digital system",
+        "card_details": "Let students demonstrate functions themselves. Include a plan for improvements. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 41,
+        "card_type": "Assessment",
+        "card_category": "Assessment artefact",
+        "card_name": "Customer/user feedback",
+        "card_description": "Feedback given by customer/user on e.g. a presentation, prototype og service.",
+        "card_details": "The feedback gives information teacher otherwise would not have. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 42,
+        "card_type": "Assessment",
+        "card_category": "Assessment artefact",
+        "card_name": "Performance",
+        "card_description": "Performance using for instance music, drama, dance or roleplay.",
+        "card_details": "Opportunity to show practical skills in the creative fields. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 43,
+        "card_type": "Assessment",
+        "card_category": "Assessment artefact",
+        "card_name": "Fieldwork",
+        "card_description": "Take part in work outside the learning institution. Any kind of practical work that is relevant to the course or study\r\nprogramme.",
+        "card_details": "Working in the hospital as a nurse student.",
+        "card_icon": ""
+      },
+      {
+        "card_id": 44,
+        "card_type": "Assessment",
+        "card_category": "Assessment artefact",
+        "card_name": "Cooperation skills",
+        "card_description": "The ability to work and\r\ncooperate with others. Can encompass delegation,\r\ncommunication and\r\nunderstanding of others.",
+        "card_details": "Can be both individual or group reflections. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 45,
+        "card_type": "Assessment",
+        "card_category": "Assessment artefact",
+        "card_name": "Practical exercises",
+        "card_description": "Practical skills important to the field or course. Can include being able to use certain\r\nsoftware, machines or tools",
+        "card_details": "Perform statictical analysis with the designated software.",
+        "card_icon": ""
+      },
+      {
+        "card_id": 46,
+        "card_type": "Assessment",
+        "card_category": "Assessment artefact",
+        "card_name": "Communicative skills",
+        "card_description": "The students demonstrates their vocal skills.",
+        "card_details": "Can focus on students' argumentation, promotion, or debating skills.",
+        "card_icon": ""
+      },
+      {
+        "card_id": 47,
+        "card_type": "Assessment",
+        "card_category": "Assessment artefact",
+        "card_name": "Simulation",
+        "card_description": "Digital or physical simulation situation, where the students need to make decisions based on knowledge and/or\r\nexperience.",
+        "card_details": "Can be used to assess the students' ability to use knowledge from the course in a more practical setting.",
+        "card_icon": ""
+      },
+      {
+        "card_id": 48,
+        "card_type": "Assessment",
+        "card_category": "Assessment artefact",
+        "card_name": "Communication",
+        "card_description": "The students demonstrates their skills at communcating a message, a story or knowledge.",
+        "card_details": "The communication can be a video, a presentation, a poster, etc.",
+        "card_icon": ""
+      },
+      {
+        "card_id": 49,
+        "card_type": "Assessment",
+        "card_category": "Assessment format",
+        "card_name": "Spontaneous oral feedback",
+        "card_description": "Immediate feedback and reactions from the assessor.",
+        "card_details": "Can be about prototype, presentation or performance.",
+        "card_icon": ""
+      },
+      {
+        "card_id": 50,
+        "card_type": "Assessment",
+        "card_category": "Assessment format",
+        "card_name": "Grade",
+        "card_description": "The assessment is given as e.g., a grade from A to F, where A is an excellent result and F is a fail. ",
+        "card_details": "Grading can reflect the quality of the work, and be informative for both the students and future employers. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 51,
+        "card_type": "Assessment",
+        "card_category": "Assessment format",
+        "card_name": "Oral feedback",
+        "card_description": "The assessment is given as oral feedback.",
+        "card_details": "The students may ask questions to clarify parts of the curriculum and can produce more learning. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 52,
+        "card_type": "Assessment",
+        "card_category": "Assessment format",
+        "card_name": "Written feedback",
+        "card_description": "The assessment is given as a written feedback. Can be made available as a physical note or through digital platforms. ",
+        "card_details": "Having the feedback, the students can use it to better their work and in future projects.",
+        "card_icon": ""
+      },
+      {
+        "card_id": 53,
+        "card_type": "Assessment",
+        "card_category": "Assessment format",
+        "card_name": "Pass_fail",
+        "card_description": "The assessment grade is either pass or fail.",
+        "card_details": "Suitable  when grades can disturb the learning process. Use clear criteria for a effective and time saving Assessment. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 54,
+        "card_type": "Assessment",
+        "card_category": "Assessment format",
+        "card_name": "Emotional experience",
+        "card_description": "The emotions evoked by experiencing the assessment artefact. ",
+        "card_details": "Suitable when the artefact is an artwork, performance, or creativity_based rather than knowledge_based. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 55,
+        "card_type": "Assessment",
+        "card_category": "Assessment format",
+        "card_name": "Graphic feedback",
+        "card_description": "Assessment feedback is annotations or drawings on the assessed artefact.\u00a0",
+        "card_details": "Points to where the feedback applies.",
+        "card_icon": ""
+      },
+      {
+        "card_id": 56,
+        "card_type": "Assessment",
+        "card_category": "Assessment format",
+        "card_name": "Summative",
+        "card_description": "A final assessment of a course or a segment of the course. Compares to a benchmark. ",
+        "card_details": "Usually used at the end of a course, project or unit. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 57,
+        "card_type": "Assessment",
+        "card_category": "Assessment format",
+        "card_name": "Formative",
+        "card_description": "Students learning outcomes are evaluated with focus on improving their learning. ",
+        "card_details": "Usually used during a course, to adapt and improve student learning. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 58,
+        "card_type": "Assessment",
+        "card_category": "Assessment format",
+        "card_name": "Overall feedback",
+        "card_description": "Without focusing on the details of the artefact. ",
+        "card_details": "Overall feedback can more easily focus on the positive sides, which may be encouraging for students. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 59,
+        "card_type": "Assessment",
+        "card_category": "Assessment format",
+        "card_name": "Detailed",
+        "card_description": "All the individual parts and/ or facets of the Assessment object is evaluated. ",
+        "card_details": "In bigger projects and longer projects, the students work may be better reflected in a detailed Assessment. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 60,
+        "card_type": "Assessment",
+        "card_category": "Assessment format",
+        "card_name": "Holistic",
+        "card_description": "An overall assessment, looks at the big picture and do not look at every part individually. ",
+        "card_details": "Can include not easily quantifiable factors like wow_factor or overall impression. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 61,
+        "card_type": "Assessment",
+        "card_category": "Assessment format",
+        "card_name": "Not part of final grade",
+        "card_description": "The assessment does not count towards the final grade and the final Assessment in the course. ",
+        "card_details": "The assessment purpose is student learning and development.",
+        "card_icon": ""
+      },
+      {
+        "card_id": 62,
+        "card_type": "Assessment",
+        "card_category": "Assessment format",
+        "card_name": "Part of final grade",
+        "card_description": "The assessment is part of the final grade. ",
+        "card_details": "The assessment make up a percentage of the final grade or can be a used to decide between grades. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 63,
+        "card_type": "Assessment",
+        "card_category": "Context",
+        "card_name": "Plenary",
+        "card_description": "Assessment is done in plenary with an audience",
+        "card_details": "Often used when the artefact is something that can be presented to a bigger audience, like a presentation, prototype, model or poster.",
+        "card_icon": ""
+      },
+      {
+        "card_id": 64,
+        "card_type": "Assessment",
+        "card_category": "Context",
+        "card_name": "In the group",
+        "card_description": "Assessment is done in plenary with an audience",
+        "card_details": "It can be either only with the group that is assessed or with the class/student group for the course present. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 65,
+        "card_type": "Assessment",
+        "card_category": "Context",
+        "card_name": "One_to_one",
+        "card_description": "Assessment is done with only the student and the assessor present",
+        "card_details": "Can give more detailed and honest remarks about the artefact and Assessment.",
+        "card_icon": ""
+      },
+      {
+        "card_id": 66,
+        "card_type": "Assessment",
+        "card_category": "Context",
+        "card_name": "The office",
+        "card_description": "Assessment is done in the assessors office",
+        "card_details": "Fitting when the assessor needs calmness to do the Assessment. Often used when the artefact has to be handed in. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 67,
+        "card_type": "Assessment",
+        "card_category": "Context",
+        "card_name": "The learning space",
+        "card_description": "Assessment is done in the learning space of the students",
+        "card_details": "Student may be more comfortable in their own familiar learning space. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 68,
+        "card_type": "Assessment",
+        "card_category": "Context",
+        "card_name": "The workshop",
+        "card_description": "Assessment is done in the workshop",
+        "card_details": "More room for the process of making a product. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 69,
+        "card_type": "Assessment",
+        "card_category": "Context",
+        "card_name": "At a company",
+        "card_description": "Assessment is done at a company ",
+        "card_details": "In courses where the students cooperate or have internship in a company, Assessment can also be conducted there. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 70,
+        "card_type": "Assessment",
+        "card_category": "Context",
+        "card_name": "At a conference",
+        "card_description": "Assessment is done at a conference.",
+        "card_details": "A conference for the whole class or study programme is organised, where student can present projects. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 71,
+        "card_type": "Assessment",
+        "card_category": "Context",
+        "card_name": "Common area",
+        "card_description": "Assessment is done in a common area for the course, study programme or institution.",
+        "card_details": "Common areas can give an informal vibe, and therefore be less intimidating for students. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 72,
+        "card_type": "Assessment",
+        "card_category": "Context",
+        "card_name": "Classroom",
+        "card_description": "The assessor does the assessment in a classroom often used for lectures and other activities. ",
+        "card_details": "Using a space already assigned to the students may be cost efficient. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 73,
+        "card_type": "Assessment",
+        "card_category": "Context",
+        "card_name": "Pragmatic",
+        "card_description": "The assessor does the assessment at the place that\u2019s most practical there and then.",
+        "card_details": "Finding an available space when needed may save costs and resources, but can be more time consuming. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 74,
+        "card_type": "Assessment",
+        "card_category": "Context",
+        "card_name": "Digital platform",
+        "card_description": "Platforms where students and teachers can interact through forums, chat, etc.",
+        "card_details": "Suited for written or other digital assessment artefacts.",
+        "card_icon": ""
+      },
+      {
+        "card_id": 75,
+        "card_type": "Assessment",
+        "card_category": "Context",
+        "card_name": "Video conference",
+        "card_description": "In a video conference on e.g. Zoom, Google Meet, Teams or Whereby.",
+        "card_details": "Can be done independent of location.",
+        "card_icon": ""
+      },
+      {
+        "card_id": 76,
+        "card_type": "Assessment",
+        "card_category": "Context",
+        "card_name": "Smartphone app",
+        "card_description": "An app for interaction between students and teachers in a daily basis.",
+        "card_details": "Supports informal, direct and private dialogue with students.",
+        "card_icon": ""
+      },
+      {
+        "card_id": 77,
+        "card_type": "Assessment",
+        "card_category": "Assessment timing",
+        "card_name": "At course start",
+        "card_description": "Assessment is conducted before teaching starts.",
+        "card_details": "Can be used as a tool when the students have different academic background, to assess a baseline level of knowledge. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 78,
+        "card_type": "Assessment",
+        "card_category": "Assessment timing",
+        "card_name": "Continuous",
+        "card_description": "Assessement is done continously throughout the  duration of the course.",
+        "card_details": "Assessment happens from the start of the course, throughout the course and at the end of the course. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 79,
+        "card_type": "Assessment",
+        "card_category": "Assessment timing",
+        "card_name": "Ongoing evaluation",
+        "card_description": "Assessments are done throughout the course",
+        "card_details": "Assessment is done while the students are working on a project. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 80,
+        "card_type": "Assessment",
+        "card_category": "Assessment timing",
+        "card_name": "Random",
+        "card_description": "Student is assessed at a random time(s) during the course. ",
+        "card_details": "Times for assessments can be set at random at the start of the course. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 81,
+        "card_type": "Assessment",
+        "card_category": "Assessment timing",
+        "card_name": "Structured and planned",
+        "card_description": "The Assessment times are structured and planned based on the course work and plan for the course. ",
+        "card_details": "By structuring the course work and the Assessment, different components and learning curves can be captured. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 82,
+        "card_type": "Assessment",
+        "card_category": "Assessment timing",
+        "card_name": "Milestone_schedule",
+        "card_description": "Assessments are done at fixed milestones during the course. ",
+        "card_details": "A good fit for courses with clear time restricted learning activities.",
+        "card_icon": ""
+      },
+      {
+        "card_id": 83,
+        "card_type": "Assessment",
+        "card_category": "Assessment timing",
+        "card_name": "When needed",
+        "card_description": "Assessments are done on_demand and can be adapted throughout the course. ",
+        "card_details": "Assessments are done throughout the course, so at the end of the course the lecturer have enough Assessments to give a final grade.",
+        "card_icon": ""
+      },
+      {
+        "card_id": 84,
+        "card_type": "Assessment",
+        "card_category": "Assessment timing",
+        "card_name": "At course end",
+        "card_description": "Assessment at the end of the course. ",
+        "card_details": "A final Assessment that will encapsulate all the learning from the course.",
+        "card_icon": ""
+      },
+      {
+        "card_id": 85,
+        "card_type": "Assessment",
+        "card_category": "Assessment timing",
+        "card_name": "At education end",
+        "card_description": "Student is assessed at the end of the education or study programme",
+        "card_details": "Can be measured by standards applied to professionals. ",
+        "card_icon": ""
+      },
+      {
+        "card_id": 86,
+        "card_type": "Assessment",
+        "card_category": "Assessment timing",
+        "card_name": "Midway",
+        "card_description": "Assessment half_way through the course.",
+        "card_details": "Can be an opportunity for formative assessment.",
+        "card_icon": ""
+      },
+        {   
+          "card_id": 87,
+          "card_type": "Mission",
+          "card_name": "Innovation",
+          "card_description": "Your mission is to find and support new and innovative ways of assessing students.",
+          "card_icon": ""
+        },
+        {
+          "card_id": 88,
+          "card_type": "Mission",
+          "card_name": "Time management",
+          "card_description": "Your mission is to reduce time used on Assessment (not nescessarily thinking about costs)",
+          "card_icon": ""
+        },
+        {
+          "card_id": 89,
+          "card_type": "Mission",
+          "card_name": "Learning",
+          "card_description": "Your mission is to focus on the students learning outcomes. ",
+          "card_icon": ""
+        },
+        {
+          "card_id": 90,
+          "card_type": "Mission",
+          "card_name": "Student engagement",
+          "card_description": "Your mission is to prioritize and support ideas and ways that facilitate student engagement. ",
+          "card_icon": ""
+        },
+        {
+          "card_id": 91,
+          "card_type": "Mission",
+          "card_name": "Authenticity",
+          "card_description": "Your mission is to create an authentic and realistic work_life Assessment.",
+          "card_icon": ""
+        },
+        {
+          "card_id": 92,
+          "card_type": "Mission",
+          "card_name": "Cost cutting",
+          "card_description": "Your mission is to save resourses and reduce financial expenses.",
+          "card_icon": ""
+        },
+        {
+          "card_id": 93,
+          "card_type": "Mission",
+          "card_name": "Counteract cheating",
+          "card_description": "Your mission is to design Assessment that is resistant to cheating in the Assessment process.",
+          "card_icon": ""
+        }
+    ]   

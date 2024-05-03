@@ -1,0 +1,64 @@
+.Showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+}
+
+.Showcase img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    width: clamp(200px, 14vw, 300px);
+}
+
+.missioncard-showcase {
+    background-color: rgb(255, 252, 212);
+    padding: 0 2em;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-grow: calc(1/3);
+    justify-content: center;
+    align-items: center;
+}
+
+.missioncard-showcase div {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 1.5rem 0;
+    padding: 1em 4em;
+    
+}
+
+.assessmentcards-showcase {
+    background-color: rgb(239, 254, 255);
+    width: 100%;
+    padding: 0em 5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0em 1em;
+}
+
+.assessmentcards-showcase div {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 1.5rem 0;
+    padding: 1em 4em;
+}
+
+@media screen and (min-width: 950px) {
+
+    .assessmentcards-showcase {
+        padding: 0em 22em;
+    }
+    
+}

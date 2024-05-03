@@ -1,0 +1,13 @@
+.File-upload-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.File-upload-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}

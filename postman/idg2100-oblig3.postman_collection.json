@@ -1,0 +1,388 @@
+{
+	"info": {
+		"_postman_id": "54c3ef90-31ea-4b48-8af2-86a860b5b098",
+		"name": "idg2100-oblig3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33671435"
+	},
+	"item": [
+		{
+			"name": "register/login",
+			"item": [
+				{
+					"name": "user registration",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"test@testertest2.com\",\r\n    \"first_name\" : \"test\",\r\n    \"surname\" : \"test\",\r\n    \"department\" : \"test\",\r\n    \"university\" : \"test\",\r\n    \"position\" : \"TA\",\r\n    \"password\" : \"testststeststs\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/user/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"test@testertest.com\",\r\n    \"password\" : \"testststeststs\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "admin login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"admin@boss.com\",\r\n    \"password\" : \"adminbosspresident\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user CRUD",
+			"item": [
+				{
+					"name": "create user Admin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "auth-token",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjE1MzdhMDViMzJlZWQ3ZWMwZmI1YjMiLCJpYXQiOjE3MTI2NzMwNDB9.lCW7vmhLv0bmtqh9wtHiIiBGvlUgU8DK6zC5D7wGN_w",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"businesssmanman@email.com\",\r\n    \"first_name\" : \"Toast\",\r\n    \"surname\" : \"Johnson\",\r\n    \"department\" : \"The computer one\",\r\n    \"university\" : \"Money School\",\r\n    \"position\" : \"Student\",\r\n    \"password\" : \"securepassword55\",\r\n    \"role\" : \"User\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update user Admin",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "auth-token",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjE1MzdhMDViMzJlZWQ3ZWMwZmI1YjMiLCJpYXQiOjE3MTI2NzMwNDB9.lCW7vmhLv0bmtqh9wtHiIiBGvlUgU8DK6zC5D7wGN_w",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"business@email.com\",\r\n    \"first_name\" : \"Toaster\",\r\n    \"surname\" : \"Johnson\",\r\n    \"department\" : \"Bog data\",\r\n    \"university\" : \"Money School\",\r\n    \"position\" : \"Student\",\r\n    \"password\" : \"securepassword55\",\r\n    \"role\" : \"User\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/user/business@email.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"user",
+								"business@email.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete user Admin",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/user/test@testertest2.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"user",
+								"test@testertest2.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all users Admin",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth-token",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjE1MzdhMDViMzJlZWQ3ZWMwZmI1YjMiLCJpYXQiOjE3MTI2NjY1NTN9.uzZCWgAKfr6mutmVE6l8iOncTskKvJ_8IbOtnu8PTY4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3001/api/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "assessment CRUD",
+			"item": [
+				{
+					"name": "get asscards User",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth-token",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjE0MzM2YzZiMDQxMzgyY2U0OWRlMzAiLCJpYXQiOjE3MTI2NTk1NzN9.3LxGkZSxMyjXilnYyGkEI4MAZhzjTx_b6aC_kJ3jzFs",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/assessmentcards",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"assessmentcards"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get asscards Admin",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth-token",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjE1MzdhMDViMzJlZWQ3ZWMwZmI1YjMiLCJpYXQiOjE3MTI2NzMwNDB9.lCW7vmhLv0bmtqh9wtHiIiBGvlUgU8DK6zC5D7wGN_w",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/assessmentcards",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"assessmentcards"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get asscard by id Admin",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth-token",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjE1MzdhMDViMzJlZWQ3ZWMwZmI1YjMiLCJpYXQiOjE3MTI2NzMwNDB9.lCW7vmhLv0bmtqh9wtHiIiBGvlUgU8DK6zC5D7wGN_w",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/assessmentcards",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"assessmentcards"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create asscard Admin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "auth-token",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjE1MzdhMDViMzJlZWQ3ZWMwZmI1YjMiLCJpYXQiOjE3MTI2NzMwNDB9.lCW7vmhLv0bmtqh9wtHiIiBGvlUgU8DK6zC5D7wGN_w",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"card_id\" : \"101\",\r\n    \"card_type\" : \"Assessment\",\r\n    \"card_category\" : \"Innovation\",\r\n    \"card_name\" : \"Innovative card\",\r\n    \"card_description\" : \"Draw 2 cards from your deck\",\r\n    \"card_details\" : \"We're all so proud of you\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/assessmentcards",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"assessmentcards"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "mission CRUD",
+			"item": [
+				{
+					"name": "get all cards Admin",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "create new card Admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"card_id\" : \"101\",\r\n    \"card_type\" : \"Mission\",\r\n    \"card_name\" : \"Innovative card\",\r\n    \"card_description\" : \"Draw 2 cards from your deck\",\r\n    \"card_details\" : \"We're all so proud of you\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/missioncards/",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"missioncards",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

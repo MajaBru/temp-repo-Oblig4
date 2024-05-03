@@ -1,0 +1,21 @@
+.Edit-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1em;   
+}
+.Edit-form input,select,textarea {
+    display: block;
+    width: 300px;
+    padding: 5px;
+}
+
+.Edit-form button {
+    margin-bottom: 2em;
+}
+
+.Read-only {
+    background-color: rgb(223, 223, 223);
+    cursor: not-allowed;
+}

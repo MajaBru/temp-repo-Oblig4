@@ -1,0 +1,9 @@
+.Welcome-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2em;
+    padding: 5vw 20vw;
+    background-color: rgb(208, 235, 248);
+}

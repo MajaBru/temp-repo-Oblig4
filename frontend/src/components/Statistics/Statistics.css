@@ -1,0 +1,21 @@
+.Statistics-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 4em);
+    background-color: rgb(189, 189, 189);
+}
+
+.Statistics-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 250px;
+    width: 20vw;
+    margin: 1em;
+    padding: 1em;
+    background-color: rgb(238, 238, 238);
+}

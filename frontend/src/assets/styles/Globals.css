@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+.App {
+    min-height: 100vh ;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: #fffefa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    margin: 0 10em;
+    margin-bottom: 3em;
+}
+
+h1 {
+    margin: .5em 0;
+    text-align: center;
+}
+
+.Default-button {
+    background-color: #2b4661;
+    color: white;
+    padding: 0.2em .5em;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.Default-button:hover {
+    background-color: #1a2e3f;
+}
+
+.Link-style {
+    color: white
+}
+
+
+@media screen and (max-width: 768px){
+    main {
+        margin: 0 1em;
+    }
+}
