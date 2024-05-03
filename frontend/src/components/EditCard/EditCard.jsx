@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import axios from 'axios';
-import { updateMissionCard, updateAssessmentCard, 
+import { AxiosInstance, updateMissionCard, updateAssessmentCard, 
     updateMissionCardIcon, updateAssessmentCardIcon} from '../../api/axiosService';
 import './EditCard.css'; 
 
@@ -22,7 +21,7 @@ const EditCard = () => {
     useEffect(() => {
         const getCard = async () => { 
             try {
-                const response = await axios.get(`http://localhost:3001/cards/${id}`);
+                const response = await AxiosInstance.get(`http://localhost:3001/cards/${id}`);
                 setUpdatedCard(response.data.data);
                 setCard(response.data.data);
             } catch (error) {

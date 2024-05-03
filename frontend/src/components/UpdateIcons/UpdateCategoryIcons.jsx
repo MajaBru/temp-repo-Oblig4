@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import { AxiosInstance } from '../../api/axiosService';
 import './UpdateCategoryIcons.css';
 
 const UpdateCategoryIcons = () => {
@@ -23,7 +23,7 @@ const UpdateCategoryIcons = () => {
       formData.append('file', cardIcon);
 
 
-      await axios.put(`http://localhost:3001/assessmentcards/upload/category/${category}`, formData, {
+      await AxiosInstance.put(`http://localhost:3001/assessmentcards/upload/category/${category}`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         }

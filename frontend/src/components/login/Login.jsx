@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
-import axios from "axios";
+import { AxiosInstance } from "../../api/axiosService";
 import "./Login.css";
 import { useNavigate } from "react-router-dom";
 
@@ -18,12 +18,12 @@ const Login = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:3001/api/user/login', userData, {
-            withCredentials: true
-        })
+        AxiosInstance.post('http://localhost:3001/api/user/login', userData)
             .then(response => {
-                console.log("Successful login", response);
-                localStorage.setItem('authToken', response.data.token)
+                console.log(response.data);
+                return response.data;
+                //console.log("Successful login", response);
+                
             })
             .catch(err => {
                 console.error('Error posting', err);

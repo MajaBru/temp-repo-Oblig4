@@ -2,18 +2,11 @@ import Axios from "axios";
 
 const BASE_URL = "http://localhost:3001";
 
-const AxiosInstance = Axios.create({
+export const AxiosInstance = Axios.create({
     baseURL: BASE_URL,
     withCredentials: true
 })
-/*
-cons = {
-    headers: {
-        Authorization: `Bearer ${token}`,
-        'Content-Type': 'application/json'
-    }
-};
-*/
+
 const FileConfig = {
     headers: {
         'Content-Type': 'multipart/form-data'
