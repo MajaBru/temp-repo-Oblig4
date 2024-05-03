@@ -1,16 +1,14 @@
 import React from 'react';
-import Axios from 'axios';
+import { AxiosInstance } from '../../api/axiosService';
 
 const Logout = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         localStorage.removeItem('authToken');
     
-        Axios.post('http://localhost:3001/api/user/logout', null, {
-            withCredentials: true,
-        })
+        AxiosInstance.get('http://localhost:3001/api/user/logout', null)
     
-        window.location.href = '/login';
+        //window.location.href = '/login';
         
     };
 

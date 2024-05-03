@@ -4,7 +4,7 @@ const router = express.Router();
 const { getAllMissionCards, getOneMissionCard,
     createMissionCard, updateMissionCard,
     deleteMissionCard } = require('../controller/mission_controller.js');
-const { auth, authRole, attachTokenToHeader } = require('./verifyToken.js');
+const { auth, authRole } = require('./verifyToken.js');
 
 // multer upload code
 const upload = require('../upload.js');
@@ -58,18 +58,18 @@ router.get("/", getAllMissionCards);
 
 //gets a specific card from cardid
 //example: /api/missioncards/90
-router.get("/:id", attachTokenToHeader, auth, authRole('Admin'), getOneMissionCard);
+router.get("/:id", auth, authRole('Admin'), getOneMissionCard);
 
 // create new mission card
-router.post("/", attachTokenToHeader, auth, authRole('Admin'), createMissionCard);
+router.post("/", auth, authRole('Admin'), createMissionCard);
 
 //update a mission card
 //example: method PUT -> /api/missioncards/90
-router.put("/:id", attachTokenToHeader, auth, authRole('Admin'), updateMissionCard);
+router.put("/:id", auth, authRole('Admin'), updateMissionCard);
 
 
 //delete a mission card
 //example: method DELETE -> /api/missioncards/90
-router.delete("/:id", attachTokenToHeader, auth, authRole('Admin'), deleteMissionCard);
+router.delete("/:id", auth, authRole('Admin'), deleteMissionCard);
 
 module.exports = router;

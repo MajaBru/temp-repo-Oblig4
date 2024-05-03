@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import axios from "axios";
+import { AxiosInstance } from "../api/axiosService";
 
 const EditUserRole = () => {
     const { id } = useParams();
@@ -15,7 +15,7 @@ const EditUserRole = () => {
     useEffect(() => {
         const updateUserRole = async () => {
             try {
-                const response = await axios.get(`http://localhost:3001/api/user/${id}`);
+                const response = await AxiosInstance.get(`http://localhost:3001/api/user/${id}`);
                 setRole(response.data.role);
                 setCurrentRole(response.data.role);
             } catch (error) {
@@ -28,7 +28,7 @@ const EditUserRole = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.put(`http://localhost:3001/api/user/role/${id}`, { role });
+            await AxiosInstance.put(`http://localhost:3001/api/user/role/${id}`, { role });
             console.log("updated user role");
             alert("User role was updated");
             setCurrentRole(role);
