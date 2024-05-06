@@ -28,6 +28,10 @@
     --nav-bar-color: #1c2841;
     --nav-bar-hover: #1572a1;
 }
+
+header {
+    z-index: 100;
+}
 .navbar {
     background-color: var(--nav-bar-color);
     height: 80px;

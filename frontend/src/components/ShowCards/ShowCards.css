@@ -7,12 +7,13 @@
 }
 .Cards-list {
     margin-top: 2em;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em;
-    justify-items: center;
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4em;
+    justify-content: center;
+    align-content: center;
     width: 100%;
+    list-style: none;
 }
 
 .Card-style {
@@ -30,36 +31,23 @@
     border-radius: .4em;
 }
 
-.Card-icon-wrapper {
-    display: flex;
-
-    width: 100%;
-    height: 100%;
-
-}
-
-.Card-icon-wrapper img {
-    width: 60px;
-    object-fit: contain;
-
-}
-
 .Create-card-link {
     display: flex;
     justify-content: end;
-
     margin: 1em 0;
+}
 
+.Buttons-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    position: relative;
+    top: -0.4em;
 }
 
 .Buttons-wrapper button:first-child {
     margin-right: 1em;
-}
-
-.button-wrapper {
-    display: flex;
-    justify-content: end;
-    align-items: flex-end;
 }
 
 @media screen and (max-width: 768px){

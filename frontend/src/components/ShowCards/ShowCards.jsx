@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { AxiosInstance, fetchMissionCards, fetchAssessmentCards, 
     deleteMissionCard, deleteAssessmentCard } from "../../api/axiosService";
 import "./ShowCards.css";
+import MissionCard from "../MissionCard/MissionCard";
 import { Link } from "react-router-dom";
 
 
@@ -84,23 +85,22 @@ const ShowCards = () => {
             <ul className="Cards-list">
                 {toggleDisplay ? (
                     missionCards.map((card, index) => (
-                        <li className="Card-style" key={index}>
-                            <span>{card.card_id}</span>
-                            <span>{card.card_type}</span>
-                            <span>{card.card_name}</span>
-                            <span>{card.card_description}</span>
-                            <div className="Card-icon-wrapper">
-                               <img src={`http://localhost:3001/${card.card_icon}`} alt={'card icon'} /> 
-                            </div>
+                        <li key={index}>
                             
+                            <MissionCard 
+                            cardId={card.card_id}
+                            cardName={card.card_name} 
+                            cardDescription={card.card_description}
+                            cardIcon={card.card_icon}
+                            />
 
                             <div className="Buttons-wrapper">
                                 <Link to={`/manage/cards/edit/${card._id}`}> {/* link to edit */}
                                     <button className="Default-button">Edit</button>
                                 </Link>
-                                
                                 <button onClick={() => handleDeleteMission(card.card_id)} className="Default-button">Delete</button>
                             </div>
+
                         </li>
                     ))
                 ) : (
