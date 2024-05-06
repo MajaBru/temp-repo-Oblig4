@@ -24,7 +24,7 @@ const Nav = () => {
     return (
         <IconContext.Provider value={{ color: '#fff' }}>
         <header className='Main-Header'>
-            <div className='navbar' on>
+            <div className='navbar' on="true">
                 <Link to="#" className="menu-bars" onKeyDown={handleKeyPress}><FaIcons.FaBars onClick={showSidebar} /></Link>
             </div>
              <nav role="navigation" className={sidebar ? "nav-menu active" : "nav-menu"}>
