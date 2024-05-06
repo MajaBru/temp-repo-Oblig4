@@ -4,7 +4,8 @@
     border-radius: 15px;
     border: none;
     cursor: pointer;
-    width: 15%;
+    width: auto; 
+  height: auto; 
   }
   
   .button:hover {

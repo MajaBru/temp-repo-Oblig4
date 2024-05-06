@@ -29,7 +29,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Welcome />} />
-          <Route path="/GameIntro" element={<GameIntro />} />
+          <Route path="/gameintro" element={<GameIntro />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/manage/cards" element={<CardsManagement />} />
           <Route path="/manage/cards/edit/:id" element={<EditCardPage />} />
