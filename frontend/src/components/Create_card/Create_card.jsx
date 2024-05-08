@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { AxiosInstance, createAssessmentCard, createMissionCard} from "../../api/axiosService";
+import { createAssessmentCard, createMissionCard} from "../../api/axiosService";
 import "./Create_card.css";
 import { useNavigate } from "react-router-dom";
 
