@@ -1,32 +1,21 @@
-// GameTeam.jsx
 import React, { useState } from "react";
 import AddPlayer from "../components/AddPlayer/AddPlayer.jsx";
+import Button from "../components/button/button.jsx";
+import { Link } from "react-router-dom"; // Assuming you're using react-router-dom
 
 const GameTeam = () => {
-  const [addedPlayers, setAddedPlayers] = useState([]);
+  const [emails, setEmails] = useState([]); // State to store added emails
 
-  // Function to add an email to the list
-  const addEmailToList = (email) => {
-    setAddedPlayers([...addedPlayers, email]);
+  const handleAddEmail = (email) => {
+    setEmails([...emails, email]); // Add the new email to the list of emails
   };
 
   return (
     <div className="GamePage">
-      <AddPlayer onAddEmail={addEmailToList} />
-      {/* Display the list of added players */}
-      <div className="AddedPlayers">
-        <h2>Added Players</h2>
-        <ul>
-          {addedPlayers.map((player, index) => (
-            <li key={index}>
-              {player}
-              <Button variant="kick" onClick={() => removeEmailFromList(index)}>
-                Kick
-              </Button>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <AddPlayer onAddEmail={handleAddEmail} />
+      <Link to="./ChooseMissionCards.jsx">
+        <Button variant="Start">Start the game</Button>
+      </Link>
     </div>
   );
 };
