@@ -20,6 +20,8 @@ import UpdateIconsPage from "./pages/UpdateIcons";
 
 //The game pages
 import GameIntro from "./pages/GameIntro";
+import GameSolo from "./pages/GameSolo";
+import GameTeam from "./pages/GameTeam";
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Welcome />} />
           <Route path="/gameintro" element={<GameIntro />} />
+          <Route path="/gamesolo" element={<GameSolo />} />
+          <Route path="/gameteam" element={<GameTeam />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/manage/cards" element={<CardsManagement />} />
           <Route path="/manage/cards/edit/:id" element={<EditCardPage />} />

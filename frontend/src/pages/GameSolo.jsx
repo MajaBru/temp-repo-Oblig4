@@ -1,18 +1,16 @@
-import React from "react";
-import Button from "../components/button/button.jsx";
+import React, { useState } from "react";
 
 const GameSolo = () => {
-  return (
-    <div className="GamePage">
-      <div className="game-rules">
-        <h1>Game</h1>
-        <p>Rules</p>
-      </div>
+  const [addedPlayers, setAddedPlayers] = useState([]);
 
-      <div className="solo-team">
-        <Button variant="solo">Play solo</Button>
-        <Button variant="team">Play in team</Button>
-      </div>
+  // Function to add an email to the list
+  const addEmailToList = (email) => {
+    setAddedPlayers([...addedPlayers, email]);
+  };
+
+  return (
+    <div>
+      <h1>Pick a missionCard</h1>
     </div>
   );
 };
