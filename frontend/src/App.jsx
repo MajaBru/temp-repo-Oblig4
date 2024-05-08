@@ -36,8 +36,6 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Welcome />} />
-          <Route path="/gamesolo" element={<GameSolo />} />
-          <Route path="/gameteam" element={<GameTeam />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/login" element={<Login />} />
           <Route path="/logout" element={<Logout />} />
@@ -46,6 +44,18 @@ function App() {
           <Route path="/gameintro" element={
             <ProtectedRoute isAllowed={!!user}>
               <GameIntro />
+            </ProtectedRoute>
+          } />
+
+          <Route path="/gamesolo" element={
+            <ProtectedRoute isAllowed={!!user}>
+              <GameSolo />
+            </ProtectedRoute>
+          } />
+
+          <Route path="/gameteam" element={
+            <ProtectedRoute isAllowed={!!user}>
+              <GameTeam />
             </ProtectedRoute>
           } />
 
