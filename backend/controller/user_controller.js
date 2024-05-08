@@ -66,8 +66,20 @@ const loginUser = async (req, res) => {
     // @ts-ignore
     const token = jwt.sign({ _id: user._id }, process.env.TOKEN_SECRET);
 
-    res.cookie('jwt', 'Bearer ' + token, {httpOnly: true}).json({message: "Logged in successfully"});
-    console.log(user.role);
+    res.cookie('jwt', 'Bearer ' + token, {httpOnly: true});
+
+    const userResponse = {
+        firstName: user.first_name,
+        surname: user.surname,
+        email: user.email,
+        role: user.role,
+    };
+
+    res.status(200).json({
+        status: "success",
+        message: "User logged in successfully",
+        user: userResponse,
+      });
 }
 
 // logout function

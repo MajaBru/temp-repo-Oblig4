@@ -5,6 +5,7 @@ import "./assets/styles/Globals.css";
 /*import components  */
 import Nav from "./components/header/Header";
 import Footer from "./components/footer/footer";
+import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
 
 /* pages */
 import Login from "./pages/login_page";
@@ -25,6 +26,10 @@ import GameTeam from "./pages/GameTeam";
 import ChooseMissionCard from "./pages/ChooseMissionCard";
 
 function App() {
+  const user = {
+    name: 'jonathan',
+    role: 'Admin',
+  };
   return (
     <>
       <div className="App">
@@ -36,15 +41,75 @@ function App() {
           <Route path="/gamesolo" element={<GameSolo />} />
           <Route path="/gameteam" element={<GameTeam />} />
           <Route path="/choosemissioncard" element={<ChooseMissionCard />} />
+
           <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/manage/cards" element={<CardsManagement />} />
-          <Route path="/manage/cards/edit/:id" element={<EditCardPage />} />
-          <Route path="/manage/cards/icons" element={<UpdateIconsPage />} />
-          <Route path="/new" element={<NewCard />} />
-          <Route path="/manage/users" element={<UserManagement />} />
-          <Route path="/manage/users/edit/:id" element={<EditUserRole />} />
           <Route path="/login" element={<Login />} />
           <Route path="/logout" element={<Logout />} />
+
+          {/* Game pages*/}
+          <Route path="/gameintro" element={
+            <ProtectedRoute isAllowed={!!user}>
+              <GameIntro />
+            </ProtectedRoute>
+          } />
+
+          <Route path="/gamesolo" element={
+            <ProtectedRoute isAllowed={!!user}>
+              <GameSolo />
+            </ProtectedRoute>
+          } />
+
+          <Route path="/gameteam" element={
+            <ProtectedRoute isAllowed={!!user}>
+              <GameTeam />
+            </ProtectedRoute>
+          } />
+
+          {/* Admin pages */}
+          <Route path="/manage/cards" element={
+            <ProtectedRoute isAllowed={
+              !!user && user.role.includes('Admin')
+            }>
+              <CardsManagement />
+            </ProtectedRoute>
+          } />
+
+          <Route path="/manage/cards/edit/:id" element={
+            <ProtectedRoute isAllowed={
+              !!user && user.role.includes('Admin')
+            }>
+              <EditCardPage />
+            </ProtectedRoute>
+          } />
+
+          <Route path="/manage/cards/icons" element={
+            <ProtectedRoute isAllowed={
+              !!user && user.role.includes('Admin')
+            }>
+              <UpdateIconsPage />
+            </ProtectedRoute>} />
+
+          <Route path="/new" element={
+            <ProtectedRoute isAllowed={
+              !!user && user.role.includes('Admin')
+            }>
+              <NewCard />
+            </ProtectedRoute>} />
+
+          <Route path="/manage/users" element={
+            <ProtectedRoute isAllowed={
+              !!user && user.role.includes('Admin')
+            }>
+              <UserManagement />
+            </ProtectedRoute>} />
+
+          <Route path="/manage/users/edit/:id" element={
+            <ProtectedRoute isAllowed={
+              !!user && user.role.includes('Admin')
+            }>
+              <EditUserRole />
+            </ProtectedRoute>} />
+
         </Routes>
 
         <Footer />
