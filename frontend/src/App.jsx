@@ -22,6 +22,7 @@ import UpdateIconsPage from "./pages/UpdateIcons";
 import GameIntro from "./pages/GameIntro";
 import GameSolo from "./pages/GameSolo";
 import GameTeam from "./pages/GameTeam";
+import ChooseMissionCard from "./pages/ChooseMissionCard";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path="/gameintro" element={<GameIntro />} />
           <Route path="/gamesolo" element={<GameSolo />} />
           <Route path="/gameteam" element={<GameTeam />} />
+          <Route path="/choosemissioncard" element={<ChooseMissionCard />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/manage/cards" element={<CardsManagement />} />
           <Route path="/manage/cards/edit/:id" element={<EditCardPage />} />

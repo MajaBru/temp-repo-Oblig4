@@ -1,4 +1,3 @@
-// AddPlayer.jsx
 import React, { useState } from "react";
 import "./AddPlayer.css";
 import Button from "../button/button.jsx";
@@ -6,6 +5,7 @@ import Button from "../button/button.jsx";
 const AddPlayer = ({ onAddEmail }) => {
   const [searchEmail, setSearchEmail] = useState(""); // State to store the search email
   const [matchingEmail, setMatchingEmail] = useState(""); // State to store the matching email
+  const [addedPlayers, setAddedPlayers] = useState([]); // State to store added players
 
   const handleSearch = (event) => {
     event.preventDefault();
@@ -20,9 +20,19 @@ const AddPlayer = ({ onAddEmail }) => {
 
   const handleAdd = () => {
     if (matchingEmail) {
+      console.log("Adding email:", matchingEmail);
       onAddEmail(matchingEmail); // Call the onAddEmail function with the matching email
+      setAddedPlayers([...addedPlayers, matchingEmail]); // Add matching email to addedPlayers state
+      console.log("Updated addedPlayers:", addedPlayers);
+      setSearchEmail(""); // Reset searchEmail state
       setMatchingEmail(""); // Reset matchingEmail state
     }
+  };
+
+  const removeEmailFromList = (index) => {
+    const updatedPlayers = [...addedPlayers];
+    updatedPlayers.splice(index, 1);
+    setAddedPlayers(updatedPlayers);
   };
 
   return (
@@ -52,6 +62,20 @@ const AddPlayer = ({ onAddEmail }) => {
           </Button>
         </div>
       )}
+
+      {/* Display added players */}
+
+      <h2>Added Players</h2>
+      <ul>
+        {addedPlayers.map((player, index) => (
+          <li key={index}>
+            {player}
+            <Button variant="kick" onClick={() => removeEmailFromList(index)}>
+              Kick
+            </Button>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
