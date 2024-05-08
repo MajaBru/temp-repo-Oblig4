@@ -21,6 +21,8 @@ import UpdateIconsPage from "./pages/UpdateIcons";
 
 //The game pages
 import GameIntro from "./pages/GameIntro";
+import GameSolo from "./pages/GameSolo";
+import GameTeam from "./pages/GameTeam";
 
 function App() {
   const user = {
@@ -34,6 +36,8 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Welcome />} />
+          <Route path="/gamesolo" element={<GameSolo />} />
+          <Route path="/gameteam" element={<GameTeam />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/login" element={<Login />} />
           <Route path="/logout" element={<Logout />} />
