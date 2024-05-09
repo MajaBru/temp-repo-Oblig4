@@ -1,3 +1,14 @@
+:root {
+    --bg-color-primaryAssessment: #25cc6b;
+    --bg-color-secondaryAssessment: #82dffb;
+    --title-colorAssessment: #709088;
+    --card-color-innerAssessment: #FFFFFF;
+
+    --bg-color-primaryMission: #FFF2BB;
+    --bg-color-secondaryMission: #FBDD82;
+    --title-colorMission: #3F90CE;
+    --card-color-innerMission: #FFFFFF;
+}
 * {
     margin: 0;
     padding: 0;

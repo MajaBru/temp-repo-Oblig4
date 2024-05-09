@@ -1,12 +1,12 @@
 import React from "react";
-import "./MissionCard.css";
+import "./AssessmentCard.css";
 
-const MissionCard = ({ cardId, cardName, cardIcon, cardDescription }) => {
+const assessmentCard = ({ cardId, cardName, cardIcon, cardDescription }) => {
   return (
     <div>
-      <div className="mission-card-container">
+      <div className="assessment-card-container">
         <div className="card-container--inner">
-          <div className="mission-card--frontside card">
+          <div className="assessment-card--frontside card">
             <div className="star-icon">
               <svg
                 className="star-icon"
@@ -20,7 +20,7 @@ const MissionCard = ({ cardId, cardName, cardIcon, cardDescription }) => {
               </svg>
             </div>
             <div className="card-content">
-              <h2 className="card-title">MISSION</h2>
+              <h2 className="card-title">Assessment</h2>
 
               <div className="name-icon-container">
                 <p id="cardname">{cardName}</p>
@@ -32,8 +32,8 @@ const MissionCard = ({ cardId, cardName, cardIcon, cardDescription }) => {
                 </div>
               </div>
 
-              <p id="your-mission">Your mission is</p>
-              <p id="mission-description">cardDescription</p>
+              <p id="your-assessment">Super assessor</p>
+              <p id="assessment-description">{cardDescription}</p>
               <p id="cardID">{cardId}</p>
               {/*                       <div className="flip-indicator"> 
                             <span>Hide card</span>
@@ -43,9 +43,9 @@ const MissionCard = ({ cardId, cardName, cardIcon, cardDescription }) => {
                         </div> */}
             </div>
           </div>
-          <div className="mission-card--backside card">
-            <div className="mission-backside--inner">
-              <h2 className="card-title">MISSION</h2>
+          <div className="assessment-card--backside card">
+            <div className="assessment-backside--inner">
+              <h2 className="card-title">assessment</h2>
               <img
                 src="../assets/cards-png/SUPER-cards-logo.png"
                 alt="Card Logo"
@@ -64,4 +64,4 @@ const MissionCard = ({ cardId, cardName, cardIcon, cardDescription }) => {
   );
 };
 
-export default MissionCard;
+export default assessmentCard;

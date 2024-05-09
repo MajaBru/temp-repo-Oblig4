@@ -1,0 +1,54 @@
+.MissionCardContainer {
+    display: flex;
+    flex-direction: row;
+    width: 85vw;
+    justify-content: center;
+    gap: 20px;
+}
+.AssessmentCardContainer {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto multiple lines */
+    justify-content: center;
+    gap: 20px;
+    max-width: 100vw;
+    margin-bottom: 4vh;
+}
+.AssessmentCardContainer > div {
+    margin-bottom: 4vh;
+}
+.GamePage > h1 {
+    position: absolute;
+    top: 0vh;
+    text-align: center;
+    width: 100vw;
+    height: 80px;
+    color: rgb(255, 255, 255);
+    z-index: 999;
+}
+
+.GameButtons {
+    text-align: center;
+    margin:20px;
+}
+.GameButtons {
+    text-align: center;
+    margin:20px;
+}
+.GameButtons > button {
+    margin-bottom: 20px;
+}
+.GamePage {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .CardsContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .GameButtons {
+    display: flex;
+    flex-direction: column;
+  }
+  

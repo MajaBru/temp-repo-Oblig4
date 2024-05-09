@@ -41,6 +41,19 @@
 .button-login:hover {
     background-color: #1a2e3f;
 }
+  .button-end {
+    background-color: #2b4661;
+    color: white;
+    padding: 0.2em .5em;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.button-end:hover {
+    background-color: #1a2e3f;
+}
   
   /*Gamepages css only*/
 .game-rules {
