@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import MissionCard from "../components/MissionCard/MissionCard"; // Import your MissionCard component
-import "../assets/styles/ChooseMissionCard.css"; // You can define styles for this page
+import { Link } from "react-router-dom";
+import Button from "../components/button/button.jsx";
+import MissionCard from "../components/MissionCard/MissionCard";
+import "../assets/styles/ChooseMissionCard.css";
 
 const ChooseMissionCard = () => {
   const [selectedCards, setSelectedCards] = useState([]);
@@ -12,7 +14,6 @@ const ChooseMissionCard = () => {
   };
 
   const renderMissionCards = () => {
-    // Dummy mission card data, replace with actual data
     const missionCardData = [
       { id: 1, title: "Mission Card 1" },
       { id: 2, title: "Mission Card 2" },
@@ -22,28 +23,23 @@ const ChooseMissionCard = () => {
       { id: 6, title: "Mission Card 6" },
     ];
 
-    const rows = [];
-    for (let i = 0; i < missionCardData.length; i += 2) {
-      rows.push(
-        <div className="MissionCardRow" key={i}>
-          {missionCardData.slice(i, i + 2).map((card) => (
-            <MissionCard
-              key={card.id}
-              title={card.title}
-              onClick={() => handleCardClick(card)}
-              isSelected={selectedCards.some((c) => c.id === card.id)}
-            />
-          ))}
-        </div>
-      );
-    }
-    return rows;
+    return missionCardData.map((card) => (
+      <div key={card.id} className="MissionCardContainerItem">
+        <MissionCard
+          title={card.title}
+          onClick={() => handleCardClick(card)}
+          isSelected={selectedCards.some((c) => c.id === card.id)}
+        />
+      </div>
+    ));
   };
 
   return (
     <div className="ChooseMissionCard">
       <h1>Choose Mission Cards</h1>
-      <div className="MissionCardContainer">{renderMissionCards()}</div>
+      <Link to="/makeassessmentschema">
+        <Button variant="ready">Ready</Button>
+      </Link>
       <div className="Placeholders">
         {[1, 2, 3].map((index) => (
           <div key={index} className="Placeholder">
@@ -52,6 +48,9 @@ const ChooseMissionCard = () => {
             )}
           </div>
         ))}
+      </div>
+      <div className="MissionCardContainer">
+        <div className="MissionCardContainerRow">{renderMissionCards()}</div>
       </div>
     </div>
   );

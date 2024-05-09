@@ -23,6 +23,8 @@ import GameIntro from "./pages/GameIntro";
 import GameSolo from "./pages/GameSolo";
 import GameTeam from "./pages/GameTeam";
 import ChooseMissionCard from "./pages/ChooseMissionCard";
+import MakeAssessmentSchema from "./pages/MakeAssessmentSchema";
+import TeacherExplore from "./pages/TeacherExplore";
 
 function App() {
   return (
@@ -35,6 +37,11 @@ function App() {
           <Route path="/gameintro" element={<GameIntro />} />
           <Route path="/gamesolo" element={<GameSolo />} />
           <Route path="/gameteam" element={<GameTeam />} />
+          <Route path="/teacherexplore" element={<TeacherExplore />} />
+          <Route
+            path="/makeassessmentschema"
+            element={<MakeAssessmentSchema />}
+          />
           <Route path="/choosemissioncard" element={<ChooseMissionCard />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/manage/cards" element={<CardsManagement />} />

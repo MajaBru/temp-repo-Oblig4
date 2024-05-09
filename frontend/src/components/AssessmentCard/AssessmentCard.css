@@ -1,15 +1,15 @@
 .card-title {
-    color: var(--title-colorMission);
+    color: var(--title-colorAssessment);
 }
 
 p {
     font-size: 0.9em;
 }
-.mission-card--frontside { 
-    background-color: var(--bg-color-primaryMission);
+.assessment-card--frontside { 
+    background-color: var(--bg-color-primaryAssessment);
 }
 .card-content {
-    background-color: var(--card-color-innerMission);
+    background-color: var(--card-color-innerAssessment);
     padding: .4em;
     height: 80%;
     text-align: left;
@@ -19,8 +19,8 @@ p {
     margin: 0;
 }
 
-.mission-card--backside {
-    background-color: var(--bg-color-primaryMission);
+.assessment-card--backside {
+    background-color: var(--bg-color-primaryAssessment);
     transform: rotateY(180deg);
     display: flex;
     align-content: center;
@@ -28,7 +28,7 @@ p {
     flex-direction: column;
 }
 
-.mission-card--frontside, .mission-card--backside {
+.assessment-card--frontside, .assessment-card--backside {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -45,8 +45,8 @@ p {
     bottom: .1em;
 }
 
-.mission-card--frontside:hover .flip-indicator,
-.mission-card--backside:hover .flip-indicator {
+.assessment-card--frontside:hover .flip-indicator,
+.assessment-card--backside:hover .flip-indicator  {
     
     animation: opacityBlink 1s ease-in-out alternate infinite;
 }
@@ -59,8 +59,8 @@ p {
     min-height: 350px;
 }
 
-.mission-backside--inner {
-    background-color: var(--bg-color-secondaryMission);
+.assessment-backside--inner {
+    background-color: var(--bg-color-secondaryAssessment);
     margin: .4em;
     border-radius: .4em;
     height: 280px;
@@ -70,7 +70,7 @@ p {
     flex-direction:column;
 }
 
-.mission-backside--inner img {
+.assessment-backside--inner img {
     max-width: 100%;
 }
 .flip-indicator svg{
@@ -78,7 +78,7 @@ p {
     padding: 0 .5em;   
 }
 
-.mission-card-container {
+.assessment-card-container {
     min-width: 200px;
     height: 20em;
     perspective: 1000px;
@@ -101,7 +101,7 @@ p {
     padding-left: 11em;
   }
   .changeStarColor {
-    fill: var(--title-colorMission);
+    fill: var(--title-colorAssessment);
 }
 
   #cardname {
@@ -109,7 +109,7 @@ p {
     font-size: 1em;
     margin: 1em 0;
   }
-  #your-mission {
+  #your-assessment {
     font-weight: bold;
     margin-bottom: .5em;
   }

@@ -1,44 +1,41 @@
+.ChooseMissionCard > h1 {
+  position: absolute;
+  top: 0vh;
+  text-align: center;
+  width: 100vw;
+  height: 80px;
+  color: rgb(255, 255, 255);
+  z-index: 999;
+}
 
-  .MissionCardContainer {
-    /* Styles for the container of mission cards */
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-  }
-  
-  .Placeholders {
-    /* Styles for the placeholders */
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-  
-  .Placeholder {
-    /* Styles for each placeholder */
-    width: 30%; /* Adjust width as needed */
-    height: 200px; /* Adjust height as needed */
-    border: 2px dashed black;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .MissionCard {
-    /* Styles for each mission card */
-    width: calc(50% - 10px); /* Adjust width as needed with a margin of 10px on each side */
-    margin: 5px; /* Add margin around each card */
-    height: 200px; /* Adjust height as needed */
-    border: 2px solid transparent;
-    background-color: #f0f0f0; /* Background color for mission cards */
-    cursor: pointer;
-  }
-  
-  .MissionCard.selected {
-    border-color: blue; /* Border color for selected mission cards */
-  }
-  .MissionCardRow {
-    gap: 10px;
-  }
-  
+.MissionCardContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10vh;
+}
+
+.MissionCardContainerRow {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 20px;
+}
+
+.Placeholders {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.Placeholder {
+  min-width: 200px;
+  height: 40vh;
+  border: 2px dashed black;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MissionCardContainerItem {
+  margin: 5px;
+}

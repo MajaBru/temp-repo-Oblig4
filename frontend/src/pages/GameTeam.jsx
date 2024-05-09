@@ -13,7 +13,7 @@ const GameTeam = () => {
   return (
     <div className="GamePage">
       <AddPlayer onAddEmail={handleAddEmail} />
-      <Link to="./ChooseMissionCards.jsx">
+      <Link to="/ChooseMissionCard">
         <Button variant="Start">Start the game</Button>
       </Link>
     </div>
