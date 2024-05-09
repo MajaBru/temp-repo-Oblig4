@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { AxiosInstance, fetchUsers, deleteUser } from "../../api/axiosService";
+import { fetchUsers, deleteUser } from "../../api/axiosService";
 import "./UserDetails.css";
 import { Link } from "react-router-dom";
 

@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { AxiosInstance, fetchMissionCards, fetchAssessmentCards, 
+import { fetchMissionCards, fetchAssessmentCards, 
     deleteMissionCard, deleteAssessmentCard } from "../../api/axiosService";
 import "./ShowCards.css";
 import MissionCard from "../MissionCard/MissionCard";
+import AssessmentCard from "../AssessmentCard/AssessmentCard";
+import Button from "../button/button";
 import { Link } from "react-router-dom";
+import { FaEdit } from "react-icons/fa";
+import { MdDelete } from "react-icons/md";
 
 
 const ShowCards = () => {
@@ -73,18 +77,19 @@ const ShowCards = () => {
                 <button className="Default-button" onClick={handleAssessmentCards}>Assessment Cards</button>
             </div>
 
-            <Link className="Create-card-link" to={'/new'}><button className="Default-button">Create new card</button></Link>
+            <Link className="Create-card-link" to={'/new'}><Button variant="admin">Create new card</Button></Link>
             
             {!toggleDisplay && (
-                <div className="button-wrapper">
+                <div className="update-icon-button">
                     <Link to={'/manage/cards/icons'}>
-                        <button className="Default-button">Update card category icon</button>
+                        <Button variant="admin">Update card category icon</Button>
                     </Link>
                 </div>
             )}
             <ul className="Cards-list">
                 {toggleDisplay ? (
                     missionCards.map((card, index) => (
+                        
                         <li key={index}>
                             
                             <MissionCard 
@@ -96,35 +101,36 @@ const ShowCards = () => {
 
                             <div className="Buttons-wrapper">
                                 <Link to={`/manage/cards/edit/${card._id}`}> {/* link to edit */}
-                                    <button className="Default-button">Edit</button>
+                                <Button variant="admin"><FaEdit/> Edit</Button>
                                 </Link>
-                                <button onClick={() => handleDeleteMission(card.card_id)} className="Default-button">Delete</button>
+                                <Button variant="admin" onClick={() => handleDeleteMission(card.card_id)} className="Default-button"><MdDelete />Delete</Button>
                             </div>
 
                         </li>
+                        
                     ))
                 ) : (
                     
                     assessmentCards.map((card, index) => (
                         
-                        <li className="Card-style" key={index}>
-                            <span>{card.card_id}</span>
-                            <span>{card.card_type}</span>
-                            <span>{card.card_category}</span>
-                            <span>{card.card_name}</span>
-                            <span>{card.card_description}</span>
-                            <span>{card.card_details}</span>
-                            <div className="Card-icon-wrapper">
-                               <img src={`http://localhost:3001/${card.card_icon}`} alt={'card icon'} /> 
-                            </div>
-                            <div className="Buttons-wrapper">
+                        <li className="assessment-card-listitem" key={index}>
+                            <AssessmentCard
+                                cardId={card.card_id}
+                                cardName={card.card_name}
+                                cardCategory={card.card_category}
+                                cardDescription={card.card_description}
+                                cardDetails={card.card_details}
+                                cardIcon={card.card_icon}
+                            />
+                            <div className="Buttons-wrapper-assessment">
                                 <Link to={`/manage/cards/edit/${card._id}`}>
-                                    <button className="Default-button">Edit</button>
+                                    <Button variant="admin"><FaEdit/> Edit</Button>
                                 </Link>
-                                <button onClick={() => handleDeleteAssessment(card.card_id)} className="Default-button" >Delete</button>
+                                <Button variant="admin" onClick={() => handleDeleteAssessment(card.card_id)}><MdDelete /> Delete</Button>
                             </div>
                             
                         </li>
+                       
                         
                     ))
                 )}

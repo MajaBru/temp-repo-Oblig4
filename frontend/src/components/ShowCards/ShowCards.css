@@ -6,29 +6,16 @@
     margin: 1em 0; 
 }
 .Cards-list {
-    margin-top: 2em;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4em;
-    justify-content: center;
-    align-content: center;
-    width: 100%;
-    list-style: none;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 5em;
+list-style: none;
+margin-bottom: 5em;
 }
 
-.Card-style {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    align-items: start;
-    min-width: 300px;
-    width: 30vw;
-    min-height: fit-content;
-    gap: 1em;
-    padding: 2em;
-    background-color: rgb(227, 242, 252);
-    border-radius: .4em;
+.Cards-list .assessment-card-listitem {
+    margin:1em;
 }
 
 .Create-card-link {
@@ -43,11 +30,28 @@
     align-items: center;
     gap: 1em;
     position: relative;
-    top: -0.4em;
+    bottom: -1em;
+}
+
+.Buttons-wrapper-assessment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    position: relative;
+    bottom: -5em;
+    width: 260px;
+
 }
 
 .Buttons-wrapper button:first-child {
     margin-right: 1em;
+}
+
+.update-icon-button {
+    display: flex;
+    justify-content: end;
+    margin: 1em 0;
 }
 
 @media screen and (max-width: 768px){

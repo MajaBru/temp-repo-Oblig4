@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { AxiosInstance } from "../../api/axiosService";
 import "./Login.css";
@@ -16,19 +15,21 @@ const Login = () => {
         setUserData({ ...userData, [name]: value });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        AxiosInstance.post('http://localhost:3001/api/user/login', userData)
-            .then(response => {
-                console.log(response.data);
-                return response.data;
-                //console.log("Successful login", response);
-                
-            })
-            .catch(err => {
-                console.error('Error posting', err);
-            });
+        
+        try {
+            const response = await AxiosInstance.post('http://localhost:3001/api/user/login', userData);
+            
+            console.log(response.data);
+            navigate('/dashboard'); // we want to redirect based on user role
+            //console.log("Successful login", response);
+                    
+        } catch (error) {
+            console.error('Error', error);
+        }
     };
+
 
     return (
         <div>
@@ -39,7 +40,7 @@ const Login = () => {
                 <input type="text" name="email" id="email" value={userData.email} onChange={handleChange} />
 
                 <label>Password</label>
-                <input type="text" name="password" id="password" value={userData.password} onChange={handleChange} />
+                <input type="password" name="password" id="password" value={userData.password} onChange={handleChange} />
 
                 <button type="submit" className="Default-button">Login</button>
             </form>

@@ -27,6 +27,9 @@ router.post('/', [
 // Gets all users
 router.get("/", getAllUsers);
 
+// get one user by id
+router.get("/:id", getOneUser);
+
 // Finds a user by their id, used for login on frontend
 router.get("/:email", getOneUser);
 

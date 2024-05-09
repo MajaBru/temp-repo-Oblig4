@@ -32,6 +32,26 @@ export const fetchAssessmentCards = async () => {
     }
 };
 
+// fetch one random card from each category
+export const fetchCardByCategory = async (category) => {
+    try {
+        const response = await AxiosInstance.get(`${BASE_URL}/search?card_type=Assessment&&card_category=${category}&&random=1`);
+        return response.data;
+    } catch (error) {
+        console.error("Error fetching cards by category", error);
+    }
+}
+
+export const getCategories = async () => {
+    try {
+        const response = await AxiosInstance.get(`${BASE_URL}/assessmentcards/categories`);
+        return response.data.data;
+    }
+    catch (error) {
+        console.error("Error fetching categories", error);
+    }
+}
+
 // get one card from all cards
 export const fetchCard = async (id) => {
     try {

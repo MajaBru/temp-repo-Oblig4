@@ -41,7 +41,7 @@ const UpdateCategoryIcons = () => {
       <form onSubmit={handleSubmit}>
         <p>Upload file (svg only):</p>
         <input  type="file" onChange={handleFileChange} />
-        <select name="category" id="category" value={category} onChange={handleCategoryChange} >
+        <select name="category" value={category} onChange={handleCategoryChange} >
             <option>Select a category</option>
             <option value="Who is assessed">Who is assessed</option>
             <option value="The assessor">The assessor</option>

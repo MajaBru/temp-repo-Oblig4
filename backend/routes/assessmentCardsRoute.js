@@ -3,7 +3,7 @@ const router = express.Router();
 const AssessmentCard = require('../models/assessmentCard_schema.js');
 const { getAllAssessCards, getOneAssessCard,
     createNewAssessCard, updateOneAssessCard,
-    deleteOneAssessCard } = require('../controller/assessment_controller.js');
+    deleteOneAssessCard, getCategories } = require('../controller/assessment_controller.js');
 const { auth, authRole } = require('./verifyToken.js');
 
 const upload = require('../upload.js');
@@ -80,7 +80,7 @@ router.put("/upload/category/:category", upload.single("file"), async (req, res)
 
 
         
-
+router.get("/categories", getCategories);
 
 // get all cards
 router.get("/", getAllAssessCards);

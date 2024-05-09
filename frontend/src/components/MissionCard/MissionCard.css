@@ -1,5 +1,6 @@
 .card-title {
     color: var(--title-colorMission);
+    font-size: 1.2em;
 }
 
 p {
@@ -11,7 +12,7 @@ p {
 .card-content {
     background-color: var(--card-color-innerMission);
     padding: .4em;
-    height: 80%;
+    height: 260px;
     text-align: left;
 
 }
@@ -56,7 +57,7 @@ p {
     padding: .6em;
     border-radius: .3em;
     min-width: 200px;
-    min-height: 350px;
+    min-height: 290px;
 }
 
 .mission-backside--inner {
@@ -80,7 +81,7 @@ p {
 
 .mission-card-container {
     min-width: 200px;
-    height: 20em;
+    height: 260px;
     perspective: 1000px;
 }
 
