@@ -52,9 +52,9 @@ export const fetchUsers = async () => {
 };
 
 
-export const fetchUser = async (id) => {
+export const fetchUser = async (email) => {
     try {
-        const response = await AxiosInstance.get(`${BASE_URL}/api/user/${id}`);
+        const response = await AxiosInstance.get(`${BASE_URL}/api/user/${email}`);
         return response.data;
     } catch (error) {
         console.error("Error fetching user", error);
