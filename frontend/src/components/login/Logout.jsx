@@ -7,12 +7,14 @@ const Logout = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        localStorage.removeItem('authToken');
     
         AxiosInstance.get('http://localhost:3001/api/user/logout', null)
             .then(response => {
-                console.log(response.data);
+                console.log(response.data)
+                localStorage.removeItem("user");
                 navigate('/');
+                // We need to reload react doesn't rerender when localStorage changes
+                window.location.reload();
             })
             .catch(err => {
                 console.error('Error posting', err);
