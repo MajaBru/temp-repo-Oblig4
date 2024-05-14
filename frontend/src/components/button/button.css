@@ -38,11 +38,19 @@
     font-size: 1em;
 }
 
+.button-play {
+  background-color: #94a5b7;
+}
+
+.button-play:hover {
+  background-color: #737c8d;
+}
+
 .button-login:hover {
     background-color: #1a2e3f;
 }
   .button-end {
-    background-color: #2b4661;
+    background-color: #b8300e;
     color: white;
     padding: 0.2em .5em;
     border: none;
