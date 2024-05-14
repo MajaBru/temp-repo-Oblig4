@@ -59,3 +59,34 @@
     flex-direction: column;
   }
   
+  /* Add this CSS to your MakeAssessmentSchema.css file */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+    width: 300px; /* Adjust width as needed */
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 9999; /* Ensure it's above other elements */
+}
+
+.modal-content {
+    text-align: center;
+    color: white;
+  }
+  
+  .modal-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .modal-buttons button {
+    margin: 0 10px;
+  }
+  
+  .blur {
+    filter: blur(5px);
+  }

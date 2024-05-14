@@ -26,10 +26,11 @@ import GameTeam from "./pages/GameTeam";
 import ChooseMissionCard from "./pages/ChooseMissionCard";
 import MakeAssessmentSchema from "./pages/MakeAssessmentSchema";
 import TeacherExplore from "./pages/TeacherExplore";
+import SaveSchema from "./pages/SaveSchema";
 
 function App() {
   const userData = localStorage.getItem("user");
-  let user = null
+  let user = null;
   if (userData) {
     user = JSON.parse(userData);
   }
@@ -49,6 +50,7 @@ function App() {
             path="/makeassessmentschema"
             element={<MakeAssessmentSchema />}
           />
+          <Route path="/saveschema" element={<SaveSchema />} />
           <Route path="/choosemissioncard" element={<ChooseMissionCard />} />
 
           <Route path="/dashboard" element={<Dashboard />} />
@@ -56,69 +58,87 @@ function App() {
           <Route path="/logout" element={<Logout />} />
 
           {/* Game pages*/}
-          <Route path="/gameintro" element={
-            <ProtectedRoute isAllowed={!!user}>
-              <GameIntro />
-            </ProtectedRoute>
-          } />
+          <Route
+            path="/gameintro"
+            element={
+              <ProtectedRoute isAllowed={!!user}>
+                <GameIntro />
+              </ProtectedRoute>
+            }
+          />
 
-          <Route path="/gamesolo" element={
-            <ProtectedRoute isAllowed={!!user}>
-              <GameSolo />
-            </ProtectedRoute>
-          } />
+          <Route
+            path="/gamesolo"
+            element={
+              <ProtectedRoute isAllowed={!!user}>
+                <GameSolo />
+              </ProtectedRoute>
+            }
+          />
 
-          <Route path="/gameteam" element={
-            <ProtectedRoute isAllowed={!!user}>
-              <GameTeam />
-            </ProtectedRoute>
-          } />
+          <Route
+            path="/gameteam"
+            element={
+              <ProtectedRoute isAllowed={!!user}>
+                <GameTeam />
+              </ProtectedRoute>
+            }
+          />
 
           {/* Admin pages */}
-          <Route path="/manage/cards" element={
-            <ProtectedRoute isAllowed={
-              !!user && user.role.includes('Admin')
-            }>
-              <CardsManagement />
-            </ProtectedRoute>
-          } />
+          <Route
+            path="/manage/cards"
+            element={
+              <ProtectedRoute isAllowed={!!user && user.role.includes("Admin")}>
+                <CardsManagement />
+              </ProtectedRoute>
+            }
+          />
 
-          <Route path="/manage/cards/edit/:id" element={
-            <ProtectedRoute isAllowed={
-              !!user && user.role.includes('Admin')
-            }>
-              <EditCardPage />
-            </ProtectedRoute>
-          } />
+          <Route
+            path="/manage/cards/edit/:id"
+            element={
+              <ProtectedRoute isAllowed={!!user && user.role.includes("Admin")}>
+                <EditCardPage />
+              </ProtectedRoute>
+            }
+          />
 
-          <Route path="/manage/cards/icons" element={
-            <ProtectedRoute isAllowed={
-              !!user && user.role.includes('Admin')
-            }>
-              <UpdateIconsPage />
-            </ProtectedRoute>} />
+          <Route
+            path="/manage/cards/icons"
+            element={
+              <ProtectedRoute isAllowed={!!user && user.role.includes("Admin")}>
+                <UpdateIconsPage />
+              </ProtectedRoute>
+            }
+          />
 
-          <Route path="/new" element={
-            <ProtectedRoute isAllowed={
-              !!user && user.role.includes('Admin')
-            }>
-              <NewCard />
-            </ProtectedRoute>} />
+          <Route
+            path="/new"
+            element={
+              <ProtectedRoute isAllowed={!!user && user.role.includes("Admin")}>
+                <NewCard />
+              </ProtectedRoute>
+            }
+          />
 
-          <Route path="/manage/users" element={
-            <ProtectedRoute isAllowed={
-              !!user && user.role.includes('Admin')
-            }>
-              <UserManagement />
-            </ProtectedRoute>} />
+          <Route
+            path="/manage/users"
+            element={
+              <ProtectedRoute isAllowed={!!user && user.role.includes("Admin")}>
+                <UserManagement />
+              </ProtectedRoute>
+            }
+          />
 
-          <Route path="/manage/users/edit/:id" element={
-            <ProtectedRoute isAllowed={
-              !!user && user.role.includes('Admin')
-            }>
-              <EditUserRole />
-            </ProtectedRoute>} />
-
+          <Route
+            path="/manage/users/edit/:id"
+            element={
+              <ProtectedRoute isAllowed={!!user && user.role.includes("Admin")}>
+                <EditUserRole />
+              </ProtectedRoute>
+            }
+          />
         </Routes>
 
         <Footer />
