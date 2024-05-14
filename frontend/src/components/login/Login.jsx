@@ -1,8 +1,8 @@
-/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { AxiosInstance } from "../../api/axiosService";
 import "./Login.css";
 import { useNavigate } from "react-router-dom";
+
 
 const Login = () => {
     const navigate = useNavigate();
@@ -10,25 +10,29 @@ const Login = () => {
         email: "",
         password: ""
     });
-
+    
     const handleChange = (e) => {
         const { name, value } = e.target;
         setUserData({ ...userData, [name]: value });
     };
-
-    const handleSubmit = (e) => {
+    
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        AxiosInstance.post('http://localhost:3001/api/user/login', userData)
-            .then(response => {
-                console.log(response.data);
-                return response.data;
-                //console.log("Successful login", response);
-                
-            })
-            .catch(err => {
-                console.error('Error posting', err);
-            });
+
+        try {
+            const response = await AxiosInstance.post('http://localhost:3001/api/user/login', userData);
+
+            localStorage.setItem("user", JSON.stringify(response.data.user));
+            console.log(localStorage.getItem("user"));
+            navigate('/dashboard'); // we want to redirect based on user role
+            // We need to reload react doesn't rerender when localStorage changes
+            window.location.reload();
+
+        } catch (error) {
+            console.error('Error', error);
+        }
     };
+
 
     return (
         <div>
@@ -39,7 +43,7 @@ const Login = () => {
                 <input type="text" name="email" id="email" value={userData.email} onChange={handleChange} />
 
                 <label>Password</label>
-                <input type="text" name="password" id="password" value={userData.password} onChange={handleChange} />
+                <input type="password" name="password" id="password" value={userData.password} onChange={handleChange} />
 
                 <button type="submit" className="Default-button">Login</button>
             </form>

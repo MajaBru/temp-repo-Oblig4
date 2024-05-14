@@ -28,13 +28,15 @@ import MakeAssessmentSchema from "./pages/MakeAssessmentSchema";
 import TeacherExplore from "./pages/TeacherExplore";
 
 function App() {
-  const user = {
-    name: 'jonathan',
-    role: 'Admin',
-  };
+  const userData = localStorage.getItem("user");
+  let user = null
+  if (userData) {
+    user = JSON.parse(userData);
+  }
   return (
     <>
       <div className="App">
+        <div>{localStorage.getItem("user")}</div>
         <Nav />
 
         <Routes>

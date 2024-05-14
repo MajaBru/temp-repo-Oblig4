@@ -1,15 +1,24 @@
 import React from 'react';
 import { AxiosInstance } from '../../api/axiosService';
+import { useNavigate } from 'react-router-dom';
 
 const Logout = () => {
+    const navigate = useNavigate();
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        localStorage.removeItem('authToken');
     
         AxiosInstance.get('http://localhost:3001/api/user/logout', null)
-    
-        //window.location.href = '/login';
-        
+            .then(response => {
+                console.log(response.data)
+                localStorage.removeItem("user");
+                navigate('/');
+                // We need to reload react doesn't rerender when localStorage changes
+                window.location.reload();
+            })
+            .catch(err => {
+                console.error('Error posting', err);
+            });
     };
 
     return (

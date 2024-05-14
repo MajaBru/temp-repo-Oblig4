@@ -87,10 +87,22 @@ const deleteOneAssessCard = async (req, res) => {
 };
 
 
+// get all assessmentcard categories
+const getCategories = async (req, res) => {
+    try {
+        const allcategories = await AssessmentCard.distinct("card_category");
+        return res.status(200).json({
+            data: allcategories,
+        });
+    } catch (error) {
+        res.status(400).send({ message: error.message });
+    }
+};
 module.exports = { 
     getAllAssessCards,
     getOneAssessCard, 
     createNewAssessCard, 
     updateOneAssessCard,
-    deleteOneAssessCard
+    deleteOneAssessCard,
+    getCategories,
     }

@@ -1,141 +1,188 @@
-.card-title {
-    color: var(--title-colorAssessment);
-}
+:root {
+  --bg-color-one: #056A92;
+  --bg-color-two: #7D5EA5;
+  --bg-color-three: #D11F44;
+  --bg-color-four: #91CD90;
+  --bg-color-five: #F17299;
+  --bg-color-six: #F0861E;
 
-p {
-    font-size: 0.9em;
-}
-.assessment-card--frontside { 
-    background-color: var(--bg-color-primaryAssessment);
-}
-.card-content {
-    background-color: var(--card-color-innerAssessment);
-    padding: .4em;
-    height: 80%;
-    text-align: left;
 
-}
-.card-content h2 {
-    margin: 0;
-}
+  --bg-secondary-one: #0079a5;
+  --bg-secondary-two: #8567af;
+  --bg-secondary-three: #D75158;
+  --bg-secondary-four: #AFD9AC;
+  --bg-secondary-five: #F492AC;
+  --bg-secondary-six: #F39C49;
 
+  --font-size-text: .9em;
+}
 .assessment-card--backside {
-    background-color: var(--bg-color-primaryAssessment);
-    transform: rotateY(180deg);
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-direction: column;
+  transform: rotateY(180deg);
+}
+.card-assessment {
+  text-align: center;
+  padding: .6em;
+  border-radius: .3em;
+  min-width: 260px;
+  min-height: 345px;
 }
 
-.assessment-card--frontside, .assessment-card--backside {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden; 
+.assessment-card--frontside, .assessment-card--backside{
+  background-color: #8567af;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; 
+
 }
 
-.flip-indicator {
-    font-size: .9em;
-    margin-top: .5em;
-    opacity: 0;
-    position: absolute;
-    right: .1em;
-    bottom: .1em;
-}
-
-.assessment-card--frontside:hover .flip-indicator,
-.assessment-card--backside:hover .flip-indicator  {
-    
-    animation: opacityBlink 1s ease-in-out alternate infinite;
-}
-
-.card {
-    text-align: center;
-    padding: .6em;
-    border-radius: .3em;
-    min-width: 200px;
-    min-height: 350px;
-}
-
-.assessment-backside--inner {
-    background-color: var(--bg-color-secondaryAssessment);
-    margin: .4em;
-    border-radius: .4em;
-    height: 280px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction:column;
-}
-
-.assessment-backside--inner img {
-    max-width: 100%;
-}
-.flip-indicator svg{
-    width: 16px;
-    padding: 0 .5em;   
+.assessment-card--inner {
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
 
 .assessment-card-container {
     min-width: 200px;
-    height: 20em;
+    height: 250px;
     perspective: 1000px;
 }
 
-.card-container--inner  {
-    position: relative;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-    
-  }
-
-  .card-container--inner.flip {
-    transform: rotateY(180deg);
-  }
-
-  .star-icon svg {
-    width: 25px;
-    fill: grey;
-    padding-left: 11em;
-  }
-  .changeStarColor {
-    fill: var(--title-colorAssessment);
+.assessment-card--inner.flip {
+  transform: rotateY(180deg);
 }
 
-  #cardname {
-    font-weight: bold;
-    font-size: 1em;
-    margin: 1em 0;
-  }
-  #your-assessment {
-    font-weight: bold;
-    margin-bottom: .5em;
-  }
-
-  #cardID {
-    font-size: 0.8em;
-    opacity: 0.7;
-    margin:0;
-    position: absolute;
-    bottom: 4em;
-    right: 1.5em;
-  }
-
-  .name-icon-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-.Card-icon-wrapper img {
-    width: 30px;
-    object-fit: contain;
+.assessment-card-backside--inner img{
+  max-width: 100%;
 }
 
-  @keyframes opacityBlink {
-    from { opacity: 0; }
-    to { opacity: 1; }
-    }
+.flip-indicator {
+  font-size: .9em;
+  margin-top: .5em;
+  opacity: 0;
+  position: absolute;
+  right: .4em;
+  bottom: .1em;
+}
 
+.flip-indicator svg {
+  width: 16px;   
+}
+
+p {
+  font-size: var(--font-size-text);
+}
+
+/* .category-one {
+  background-color: var(--bg-color-one);
+}
+  .accent-one {
+      background-color: var(--bg-secondary-one);
+  }
+.category-two {
+  background-color: var(--bg-color-two);
+}
+  .accent-two {
+      background-color: var(--bg-secondary-two);
+  }
+.category-three {
+  background-color: var(--bg-color-three);
+}
+  .accent-three {
+      background-color: var(--bg-secondary-three);
+  }
+.category-four {
+  background-color: var(--bg-color-four);
+}
+  .accent-four {
+      background-color: var(--bg-secondary-four);
+  }
+.category-five {
+  background-color: var(--bg-color-five);
+}
+  .accent-five {
+      background-color: var(--bg-secondary-five);
+  }
+.category-six {
+  background-color: var(--bg-color-six);
+}
+  .accent-six {
+      background-color: var(--bg-secondary-six);
+  } */
+
+#card-content {
+  text-align: left;
+}
+#word-before-details {
+  font-weight: bold;
+  font-size: 1em;
+  color: DimGrey;
+  margin-bottom: 0;
+}
+
+#category {
+  font-size: 1.2em;
+  border-radius: .2em;
+  color: white;
+  margin: 0;
+  text-transform: uppercase;
+}
+#category-backside {
+  color: white;
+  font-size: 1.2em;
+  padding-top: 6em;
+}
+#cardname {
+  font-size: 1em;
+  font-weight: bolder;
+  
+}
+#card-content {
+  background-color: white;
+      padding: .4em;
+      height: 270px;
+    text-align: left;
+}
+#details {
+  margin-top: .2em;
+  color: DimGrey;
+  font-style: italic;
+  padding: .1em; 
+}
+
+#cardID {
+  font-size: 0.8em;
+  opacity: 0.7;
+  margin:0;
+  position: absolute;
+  bottom: 2em;
+  right: 1.5em;
+}
+
+.star-icon svg {
+  width: 25px;
+  fill: grey;
+  padding-left: 13em;
+}
+
+.changeStarColor {
+  fill: yellow;
+}
+
+.card:hover .flip-indicator {
+  animation: opacityBlink 1s ease-in-out alternate infinite;
+}
+
+.title-and-icon-wrap {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  height: 55px;
+}
+
+@keyframes opacityBlink {
+  from { opacity: 0; }
+  to { opacity: 1; }
+  }
