@@ -43,7 +43,14 @@
 }
 
 .button-play:hover {
-  background-color: #737c8d;
+  background-color: #8d7873;
+}
+.button-close {
+  background-color: #c84632;
+}
+
+.button-close:hover {
+  background-color: #d92c12;;
 }
 
 .button-login:hover {
