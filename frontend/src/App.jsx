@@ -36,7 +36,6 @@ function App() {
   return (
     <>
       <div className="App">
-        <div>{localStorage.getItem("user")}</div>
         <Nav />
 
         <Routes>
