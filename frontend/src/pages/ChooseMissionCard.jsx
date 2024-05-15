@@ -8,7 +8,6 @@ const ChooseMissionCard = () => {
   const [selectedCards, setSelectedCards] = useState([]);
 
   const handleCardClick = (card) => {
-    console.log("Card clicked:", card);
     if (!selectedCards.some((c) => c.id === card.id)) {
       if (selectedCards.length < 3) {
         setSelectedCards([...selectedCards, card]);
@@ -21,7 +20,6 @@ const ChooseMissionCard = () => {
   };
 
   const handlePlaceholderClick = (index) => {
-    console.log("Placeholder clicked:", index);
     // Remove the card at the specified index from selectedCards
     const updatedCards = [...selectedCards];
     updatedCards.splice(index, 1);

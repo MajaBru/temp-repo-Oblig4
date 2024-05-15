@@ -63,3 +63,7 @@
 .MissionCardContainerItem.Clicked {
   transform: translate(72px, -340px); /* Adjust translateY value to move the selected card */
 }
+.MissionCardContainerItem:hover {
+  transform: scale(1.05); /* Scale the card by 5% when hovered */
+  transition: transform 0.3s ease; /* Transition for smooth scaling */
+}
