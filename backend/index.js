@@ -1,5 +1,5 @@
 const express = require("express");
-const schemaRoutes = require("./routes/schemaRoutes");
+// const schemaRoutes = require("./routes/schemaRoutes");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 dotenv.config();
@@ -85,7 +85,7 @@ app.get("/cards/:id", async (req, res) => {
 });
 
 // Use schema routes in the app
-app.use("/schemas", schemaRoutes);
+// app.use("/schemas", schemaRoutes);
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
