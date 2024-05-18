@@ -17,7 +17,7 @@
 .MissionCardContainerRow {
   display: grid;
   grid-template-columns: repeat(3, auto);
-  gap: 20px;
+  gap: 30px;
 }
 
 .Placeholders {
@@ -30,7 +30,6 @@
   min-width: 200px;
   height: 40vh;
   border: 2px dashed black;
-  background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,4 +37,33 @@
 
 .MissionCardContainerItem {
   margin: 5px;
+}
+
+.Placeholder {
+  width: 200px; /* Adjust according to your layout */
+  height: 300px; /* Adjust according to your layout */
+  border: 2px dashed #ccc; /* Placeholder border */
+  margin: 0 10px; /* Adjust spacing */
+  display: inline-block;
+  transition: all 0.3s ease; /* Transition for smooth movement */
+}
+
+.MissionCard {
+  transition: all 0.3s ease; /* Transition for smooth movement */
+}
+
+.Placeholder:hover {
+  border-color: #333; /* Change border color on hover */
+}
+
+.MissionCardContainerItem {
+  margin: 10px; /* Adjust spacing */
+}
+
+.MissionCardContainerItem.Clicked {
+  transform: translate(72px, -340px); /* Adjust translateY value to move the selected card */
+}
+.MissionCardContainerItem:hover {
+  transform: scale(1.05); /* Scale the card by 5% when hovered */
+  transition: transform 0.3s ease; /* Transition for smooth scaling */
 }
